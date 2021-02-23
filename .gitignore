@@ -1,0 +1,15 @@
+/databases
+/DevIt-Laravel-test/node_modules
+/DevIt-Laravel-test/db
+/DevIt-Laravel-test/public/hot
+/DevIt-Laravel-test/public/storage
+/DevIt-Laravel-test/storage/*.key
+/DevIt-Laravel-test/vendor
+/DevIt-Laravel-test/.env
+/DevIt-Laravel-test/.env.backup
+/DevIt-Laravel-test/.phpunit.result.cache
+/DevIt-Laravel-test/docker-compose.override.yml
+/DevIt-Laravel-test/Homestead.json
+/DevIt-Laravel-test/Homestead.yaml
+/DevIt-Laravel-test/npm-debug.log
+/DevIt-Laravel-test/yarn-error.log
