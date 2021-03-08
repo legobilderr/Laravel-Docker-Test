@@ -1,6 +1,29 @@
 <h3>Времени потрачено 27 часов</h3>
-<h3>docker-compose up --build </h3>
-<h3>http://localhost:8080/public/</h3>
+<h2>
+Приложеение с регистрацией пользователей  обновлять данные пользователя 
+и возможностью изменять статусы пользователей 
+docker-compose up --build
+в папке проекта меняем название файла с .env.exemple на .env  
+заходим в терминал контейнера 
+docker-compose exec web bash
+php artisan key:generate
+зхаходим в админер http://localhost:6080/ 
+(ueser:root/password:123456)
+создаём базу данных  (имя базы данны)
+переходим в файл .env (в папке проекта)
+DB_DATABASE=(имя базы данны)
+DB_HOST=db
+DB_PASSWORD=123456
+Вернёмся в терминал контейнера выполним миграцию бд 
+php artisan migrate
+переходим
+http://localhost:8080/public/
+создайте нового пользователя
+чтобы создать пользователя админа перейдите в админер и редактируйте запись в таблице users
+измените поле UType с USR на  ADM
+пользователь не видит самого себя в разделе все пользователи 
+    </h2>
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
